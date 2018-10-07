@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <script src="CorridorTile.js"></script>
+      <script src="CorridorPlayer.js"></script>
+      <script src="CorridorGame.js"></script>
+      <script src="CorridorMove.js"></script>
+      <script>
+         window.addEventListener("load", function(){
+            var game = new CorridorGame();
+            game.begin();
+         }); 
+      </script>
+   </head>
+   <body>
+      <div id="game-screen">
+         <canvas id="canvas" height="400" width="400"></canvas>
+      </div>
+      
+      <div id="player-1-controls">
+         <p id="label">Player 1's Turn</p>
+         <button id="wall-button">Wall: 10</button>
+         <button id="pawn-button">Pawn</button>
+      </div>
+      <img id="wood" src="wood.png" style="display : none"/>
+      <img id="dark-wood" src="dark-wood.png" style="display : none"/>
+   </body>
+</html>
